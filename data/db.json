@@ -1,20 +1,7 @@
 {
   "games": [
     {
-      "id": 1,
-      "title": "The Division 2",
-      "imageName": "theDivision2.jpg",
-      "genres": [
-        "tactical shooter",
-        "action"
-      ],
-      "console": "PS4",
-      "year": "2019",
-      "description": "A 3rd person military tactical shooter set in a destroyed Washington DC where you fight off various factions from taking over the city.",
-      "datePassed": "7/11/2022"
-    },
-    {
-      "id": 2,
+      "id": "2",
       "title": "No Man's Sky",
       "imageName": "noMansSky.jpg",
       "genres": [
@@ -28,30 +15,108 @@
       "datePassed": "4/25/2021"
     },
     {
-      "id": 3,
+      "id": "3",
       "title": "Cyberpunk 2077",
       "imageName": "cyberpunk_2077.jpg",
       "genres": [
-        "rpg",
-        "action"
+        "RPG",
+        "Action",
+        "FPS"
       ],
       "console": "PC",
       "year": "2020",
-      "description": "A RPG which the player plays as V in a cyberpunk setting doing missions in Night City.",
-      "datePassed": "2/15/2022"
+      "description": "A very good futuristic RPG game. That is the best in the world.hdrdyrdyrdyrdyrdyrdyrdrydrdrtdrdrtdrtdtrdtrdtrdtrdtrdtrdtrdrtdtrdtrdrtdrtdrtdrtdrtdrtd",
+      "datePassed": "5/25/2023"
     },
     {
-      "id": 4,
-      "title": "Mafia: Definitive Edition",
+      "id": "26c8",
+      "title": "dvvsdvdsvsv",
+      "imageName": "wildlands.jpg",
+      "genres": [
+        "tactical shooter"
+      ],
+      "console": "PC",
+      "year": 2018,
+      "description": "vsfdvfdbgbgbfdbdfbdfbdfbddfbdfbfdbdfbfdbfdbfdbdfbfdbdfbfdbdfbfdbfdbdfbdfbfdbdfbdfbdfbdfbdfbfdbfdbfdbfbfbfdbfdbdfbfdbfdbdfbfdbfdbfbfbfbdbdbdb",
+      "datePassed": "08/17/2023"
+    },
+    {
+      "id": "f14a",
+      "title": "vvreververb",
+      "imageName": "cyberpunk_2077.jpg",
+      "genres": [
+        "fps",
+        "tactical shooter"
+      ],
+      "console": "PC",
+      "year": 2020,
+      "description": "ccvewqwcwqcbwqkcbweqcewbicebwqicugweyicgewiycgweiycgweyicgewyicgewyicgewcygweyicgweiycgewycgewyucgweyucgweycgewycgweycgewycgweycgweygcweygcewucgegcueygcuyewgcyuewgcuyewgcuyegcegcyuwgcuyewgcyuewgcyuewgcyuewgc",
+      "datePassed": "08/17/2023"
+    },
+    {
+      "id": "9e08",
+      "title": "dvdsvsdvsvs",
+      "imageName": "theDivision2.jpg",
+      "genres": [
+        "tactical shooter",
+        "platformer",
+        "sports"
+      ],
+      "console": "PC",
+      "year": 2021,
+      "description": "fewfwefiuwfiewfwifiefieyfieyfiefiyetfywetfyetfweyftewyftewyuftewuyftewuyftewuyftweufyetwfuyewgtfuyewguygeuygcuyegeucgucygeuycgueyguyceyugcuygcuycgwuycgwyucgwyucgwyucgewycgwecyg",
+      "datePassed": "08/17/2023"
+    },
+    {
+      "id": "1145",
+      "title": "Mafia",
       "imageName": "mafia.jpg",
       "genres": [
-        "crime",
-        "action"
+        "action",
+        "adventure",
+        "sandbox"
       ],
-      "console": "Xbox One",
-      "year": "2020",
-      "description": "A crime action game where you play as a taxi driver turned mafia hitman.",
-      "datePassed": "6/7/2023"
+      "console": "PC",
+      "year": 2006,
+      "description": "ejvewhviuwhviuewvhieuwvhuewivhewuivhewiuvhweiuvhweuivhweiuvhewivhweivhweivhwevhweviwehvihweivhwvhweuvhweivhweivhwevhewihvwihvewiuhvewivhweivhweivhewivhweivhweiuhvwieuhv",
+      "datePassed": "08/17/2023"
+    },
+    {
+      "id": "463f",
+      "title": "Test2",
+      "imageName": "wildlands.jpg",
+      "genres": [
+        "tactical shooter"
+      ],
+      "console": "PC",
+      "year": 2018,
+      "description": "ehcouheuwicheiuwchweiuchweiuchewiucghweiucgweiycgweiycgweiycgweycgewuycgweyucgweucgweuycgweucgweucgweucgweucgweucgweucgweucgweyucgweuycgweucgweucgweuycgweycgeywgcyuwegcuygewyucgwuygwyucgyuewgcyuguygec",
+      "datePassed": "11/31/2024"
+    },
+    {
+      "id": "dad5",
+      "title": "Shit",
+      "imageName": "noMansSky.jpg",
+      "genres": [
+        "rpg",
+        "space sim"
+      ],
+      "console": "PC",
+      "year": 2019,
+      "description": "fbfbdbdbdbdbdfbdfbdfbfdbdfbdfbdfbfbfdbfdbfbfdbfdbfdbfdbfdbfdbdfbdfbfdbdfbdfbfdbfdbfdbfdbfdbfbfdbbddbdfbfbfdbfdbfdbfbfbfbfbfbfbfbfbffb",
+      "datePassed": "2/17/2024"
+    },
+    {
+      "id": "888a",
+      "title": "dvdsvdsv",
+      "imageName": "noMansSky.jpg",
+      "genres": [
+        "tactical shooter"
+      ],
+      "console": "PC",
+      "year": 1999,
+      "description": "htrhbrfbtrbrtbtrbrtbtrbtrbbtrbtrbtrbtrbtrbtrbtrbtrbtrbtrbtrbtrbtrbtrbtrbrtbtrbtrbtrbtrbtrbtrbtrbtrbtrbtrbtrbrtbtrbtrbtbtrbtrbtrbtrbtrbtb",
+      "datePassed": "12/09/2024"
     }
   ]
 }

@@ -1,3 +1,7 @@
+
+
+//WARNING - not used in the app! App uses react router loaders instead
+
 import { useState, useEffect } from 'react'
 
 function useFetchData (url) {
