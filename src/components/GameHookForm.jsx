@@ -1,8 +1,9 @@
 import { useForm, Controller } from "react-hook-form"
+import { gameSchema } from '../validations/gameSchema'
 import { useState, useEffect } from 'react'
 //import { imageSelectHandler, imageUploadHandler } from "../utils/imageUtil"
 import { yupResolver } from "@hookform/resolvers/yup"
-import * as yup from "yup"
+import { addGame } from '../api/clientApi'
 import { Form } from 'react-router-dom' //React-router's form component
 import axios from 'axios'
 import {
@@ -16,7 +17,8 @@ import {
 //The submit works and redirect works and every is posting ok.
 //Next try to see if I can insert the GameHookForm component on the NewGamePage to get the oncancel and submitting props 
 
-function GameHookForm ({ onCancel, submitting }) {
+function GameHookForm({ onCancel, submitting }) {
+  const [isSubmitting, setIsSubmitting] = useState(false)
 
   const useState = ({
     selectedImage: null
@@ -34,7 +36,7 @@ function GameHookForm ({ onCancel, submitting }) {
   //handles submit state
   //const navigate = useNavigate()
 
-  function cancelHandler () {
+  function cancelHandler() {
     navigate('/games/newGame')
   }
 
@@ -51,20 +53,6 @@ function GameHookForm ({ onCancel, submitting }) {
 
 
   //handles all the errors and conditions from the form in a centerlized area
-  const gameSchema = yup.object().shape({
-    title: yup.string().required("Must have a game title!!").max(50, "Game title too long!!"),
-    image: yup.mixed().test("image", "Must upload a game image!!", (value) => {
-      if (value.length > 0) {
-        return true
-      }
-      return false
-    }),
-    genre: yup.array().typeError("Must check at least 1 game genre!!").min(1, "Must check at least 1 game genre!!"),
-    console: yup.string().required("Need to select a game console!!"),
-    year: yup.number().min(1900, "Enter a appropriate year - YYYY").max(9999, "Enter a appropriate year..too high - YYYY").typeError("Please enter the game's year it was released!"),
-    description: yup.string().required("Please enter a short description of the game!").min(100, "Game Description too short!! Enter about 50 characters.").max(500, "Game description too long!!").typeError("Please enter a short description of the game!"),
-    datePassed: yup.string().required("Please enter date you passed the game!!").matches(/\b(0[1-9]|1[0-2])[-/](0[1-9]|[12]\d|3[01])[-/](19\d\d|20\d\d)\b/, "Invalid date format enter date as - MM/DD/YYYY")
-  })
 
   //uses react hook form stuff and yup resolver for error triggers, submit, errors, and maybe getValues on form before submit
   //add file size limits and file type prob not in the schema
@@ -116,17 +104,14 @@ function GameHookForm ({ onCancel, submitting }) {
   }
   */
 
-
-
-
-
-
   const onSubmit = async (data, e) => {
 
     //what the react router action does
+    setIsSubmitting(true)
     try {
       e.preventDefault()
-      await saveGame(data)
+      await addGame(data)//saveGame(data)
+      navigate("/games")
     }
     catch (err) {
       if (err.status === 422) {
@@ -134,25 +119,13 @@ function GameHookForm ({ onCancel, submitting }) {
       }
       throw err
     }
-
-    navigate("/games")
+    setIsSubmitting(false)
 
   }
 
   const onSubmitError = async (errors) => {
     console.log("Error. Can't submit!", errors)
   }
-
-
-
-
-
-
-  /*
-    const useState = ({
-      selectedImage: null
-    })
-  */
 
   return (
     <>
@@ -388,7 +361,7 @@ export async function newGameAction ({ request }) {
 
   return redirect('/games')
 }
-*/
+
 
 //Called in the action, it will get all te cleaned data and assign them into each data variable for the json file
 //then it will post or add to the json file 
@@ -418,22 +391,26 @@ export async function saveGame (data) {
 
   //problem with  this is the axios post - convert fetch to axios post
 
-  const res = await axios.post('http://localhost:8000/games', {
-    title: data.title,
-    imageName: data.image[0].name,
-    genres: data.genre,
-    console: data.console,
-    year: data.year,
-    description: data.description,
-    datePassed: data.datePassed
-  }).then(res => {
-    console.log(res)
-  }).catch(err => {
-    console.log(err, err.res)
-    throw new Error("Error! Failed to add game!!")
-  })
+  //Does post req to add a game
+  //addGame(data)
 
-  /*
+  
+    const res = await axios.post('http://localhost:8000/games', {
+      title: data.title,
+      imageName: data.image[0].name,
+      genres: data.genre,
+      console: data.console,
+      year: data.year,
+      description: data.description,
+      datePassed: data.datePassed
+    }).then(res => {
+      console.log(res)
+    }).catch(err => {
+      console.log(err, err.res)
+      throw new Error("Error! Failed to add game!!")
+    })
+  
+    
     const res = await fetch('http://localhost:8000/games', {
       method: 'POST',
       body: JSON.stringify(game),
@@ -445,13 +422,8 @@ export async function saveGame (data) {
     if (!res.ok) {
       throw res
     }
-  
-    */
+  */
 
-
-
-
-}
 
 
 

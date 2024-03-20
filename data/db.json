@@ -29,18 +29,6 @@
       "datePassed": "5/25/2023"
     },
     {
-      "id": "26c8",
-      "title": "dvvsdvdsvsv",
-      "imageName": "wildlands.jpg",
-      "genres": [
-        "tactical shooter"
-      ],
-      "console": "PC",
-      "year": 2018,
-      "description": "vsfdvfdbgbgbfdbdfbdfbdfbddfbdfbfdbdfbfdbfdbfdbdfbfdbdfbfdbdfbfdbfdbdfbdfbfdbdfbdfbdfbdfbdfbfdbfdbfdbfbfbfdbfdbdfbfdbfdbdfbfdbfdbfbfbfbdbdbdb",
-      "datePassed": "08/17/2023"
-    },
-    {
       "id": "f14a",
       "title": "vvreververb",
       "imageName": "cyberpunk_2077.jpg",
@@ -82,18 +70,6 @@
       "datePassed": "08/17/2023"
     },
     {
-      "id": "463f",
-      "title": "Test2",
-      "imageName": "wildlands.jpg",
-      "genres": [
-        "tactical shooter"
-      ],
-      "console": "PC",
-      "year": 2018,
-      "description": "ehcouheuwicheiuwchweiuchweiuchewiucghweiucgweiycgweiycgweiycgweycgewuycgweyucgweucgweuycgweucgweucgweucgweucgweucgweucgweucgweyucgweuycgweucgweucgweuycgweycgeywgcyuwegcuygewyucgwuygwyucgyuewgcyuguygec",
-      "datePassed": "11/31/2024"
-    },
-    {
       "id": "dad5",
       "title": "Shit",
       "imageName": "noMansSky.jpg",
@@ -117,6 +93,59 @@
       "year": 1999,
       "description": "htrhbrfbtrbrtbtrbrtbtrbtrbbtrbtrbtrbtrbtrbtrbtrbtrbtrbtrbtrbtrbtrbtrbtrbrtbtrbtrbtrbtrbtrbtrbtrbtrbtrbtrbtrbrtbtrbtrbtbtrbtrbtrbtrbtrbtb",
       "datePassed": "12/09/2024"
+    },
+    {
+      "id": "a142",
+      "title": "Bullshit",
+      "imageName": "wildlands.jpg",
+      "genres": [
+        "action",
+        "adventure",
+        "rpg"
+      ],
+      "console": "PC",
+      "year": 2023,
+      "description": "dvrreververvrevrevgervrevrevrevvrververvrevervrevervrevrevervreverververvreververvrevrevrevrrevrevrevrevrevrevrevrevrevrerevrev",
+      "datePassed": "03/12/2024"
+    },
+    {
+      "id": "366f",
+      "title": "Shitface",
+      "imageName": "cyberpunk_2077.jpg",
+      "genres": [
+        "adventure",
+        "fps"
+      ],
+      "console": "PC",
+      "year": 2021,
+      "description": "fbtbterbtrbrtbrtbrtbtrbtrbtrbrtbtrbtttbtbtbrtbtrbtrbtrbtrbtrbtrnwrnernbbtrbtrbtrbtbtrbbbbbbbbbbbbtbtbtbtbtbtbtrbbtbbbrbsrbtsrsbsb",
+      "datePassed": "12/12/2024"
+    },
+    {
+      "id": "1ffa",
+      "title": "Assholes",
+      "imageName": "noMansSky.jpg",
+      "genres": [
+        "turn based",
+        "simulation"
+      ],
+      "console": "PC",
+      "year": 2005,
+      "description": "vrevervevrevervrevrevervrevrevrevrevrevrevrevreververervrevrevrevreververvevveveverveveververvrevervrevervreverv",
+      "datePassed": "08/17/2023"
+    },
+    {
+      "id": "7692",
+      "title": "Garbage BOY",
+      "imageName": "mafia.jpg",
+      "genres": [
+        "tactical shooter",
+        "indie"
+      ],
+      "console": "PC",
+      "year": 2021,
+      "description": "dvsdvjnsvnsjvdsnvljsnvjsdnvjdsvdskjlhdskjvhdsjlvhdsjvhsdjkvhdsjkvhdskjvhsdvjksdhvkdjshvkjsdhvkdsjvhdksvhdsjkvhskjdvhdskjvhdsjkvhsdjkvhsjdkvh",
+      "datePassed": "08/17/2023"
     }
   ]
 }

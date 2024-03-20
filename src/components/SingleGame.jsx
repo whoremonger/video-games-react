@@ -1,4 +1,5 @@
 import { Outlet, NavLink, useNavigate } from 'react-router-dom'
+import { deleteGame } from '../api/clientApi'
 
 //import { deleteGame } from '../pages/GameDetailsPage'
 import axios from 'axios'
@@ -7,9 +8,11 @@ function SingleGame ({ id, title, imageName, genres, year, console, description,
   const navigate = useNavigate()
 
 
+  /*
   //Create a message to say "Game Deleted"
   //maybe create some flash message syste
   //and a confirm delete screen
+
   async function deleteGame (id, e) {
 
     await axios.delete(`http://localhost:8000/games/${id}`).then((res) => {
@@ -20,6 +23,13 @@ function SingleGame ({ id, title, imageName, genres, year, console, description,
     }).catch((err) => {
       throw new Error("Error Deleting the game!")
     })
+  }
+*/
+
+  //maybe add extra error handling
+  async function deleteHandler (id, e) {
+    await deleteGame(id, e)
+    navigate("/games")
   }
 
   //create a edit page //the form will be filled with the existing data
@@ -41,7 +51,7 @@ function SingleGame ({ id, title, imageName, genres, year, console, description,
     <div key={id} className="p-2 flex justify-center m-2 border-4 rounded-2xl border-blue-900">
       <div className="absolute">
         <button onClick={e => editGame(id, e)} className="bg-yellow-600 hover:bg-yellow-500 text-black font-bold px-4 border-b-4 border-gray-800 rounded active:bg-emerald-900 active:border-emerald-700 shadow-md shadow-gray-700">Edit</button>
-        <button onClick={e => deleteGame(id, e)} className="bg-red-700 hover:bg-red-500 text-black font-bold px-4 border-b-4 border-gray-800 rounded active:bg-emerald-900 active:border-emerald-700 shadow-md shadow-gray-700">Delete</button>
+        <button onClick={e => deleteHandler(id, e)} className="bg-red-700 hover:bg-red-500 text-black font-bold px-4 border-b-4 border-gray-800 rounded active:bg-emerald-900 active:border-emerald-700 shadow-md shadow-gray-700">Delete</button>
       </div>
       <div className="p-2 m-8 inline-block bg-gray-800 max-w-sm rounded overflow-hidden shadow-2xl">
         <img style={{ backgroundImage: `url('${imageBasePath}${imageName}')`, height: 430, width: 330 }} className="w-full mx-auto m-4" src={`${imageBasePath}${imageName}`} alt={title} />

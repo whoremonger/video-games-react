@@ -3,11 +3,11 @@ import { Outlet, NavLink } from 'react-router-dom'
 //customize the hover and link highlight
 //insert custom error pages for each route or api call
 function AllGames ({ games, name }) {
+
   const imageBasePath = "../../public/images/" //make sure uploaded image goes into that folder
   //use map for each card to insert he data first
   return (
     <div className="mx-auto p-2 m-2 border-4 rounded-2xl border-blue-900">
-      <h1 className="p-2 m-2 flex justify-center text-blue-400 text-xl">{name}</h1>
       {games.map((game) => (
         <NavLink key={game.id} className="hover:border-emerald-300" to={`/games/${game.id}`}>
           <div key={game.id} className="p-2 m-8 inline-block bg-gray-800 hover:bg-emerald-900 max-w-sm rounded overflow-hidden border-transparent active:bg-emerald-700 shadow-xl">
@@ -32,8 +32,6 @@ function AllGames ({ games, name }) {
     </div>
   )
 }
-
-
 
 //For AllGames use a GameCard component and then use a map to repeat for as many game entries there are.
 export default AllGames
